@@ -1,0 +1,108 @@
+1. Insert Data
+2. Read Data
+3. Update Data
+4. Delete Data
+5. Exit
+
+Enter the choice:
+1
+Enter name
+suraj
+Enter age
+22
+Enter salary
+30000
+Hibernate: insert into Employee (age,name,salary) values (?,?,?)
+
+Enter the choice:
+2
+Hibernate: select e1_0.emp_id,e1_0.age,e1_0.name,e1_0.salary from Employee e1_0
+Employee [emp_id=2, name=kalpesh, salary=45000, age=22]
+Employee [emp_id=3, name=abc, salary=50000, age=22]
+Employee [emp_id=4, name=jagdish, salary=100000, age=22]
+Employee [emp_id=5, name=raj, salary=100000, age=22]
+Employee [emp_id=8, name=bhushan, salary=100000, age=22]
+Employee [emp_id=9, name=bhushan, salary=100000, age=22]
+Employee [emp_id=10, name=bhushan, salary=100000, age=22]
+Employee [emp_id=11, name=purvesh, salary=120000, age=23]
+Employee [emp_id=12, name=jhjhd, salary=90000, age=23]
+Employee [emp_id=13, name=samarth, salary=65000, age=26]
+Employee [emp_id=14, name=suraj, salary=30000, age=22]
+
+Enter the choice:
+3
+Enter the id to Update the record :
+12
+1. Update Name
+2.Update salary
+3.Update age
+Enter choice
+1
+Enter name 
+sujay
+Hibernate: select e1_0.emp_id,e1_0.age,e1_0.name,e1_0.salary from Employee e1_0 where e1_0.emp_id=?
+Hibernate: update Employee set age=?,name=?,salary=? where emp_id=?
+Hibernate: update Employee set name=?,age=?,salary=? where emp_id=?
+Updated successfully
+
+Enter the choice:
+2
+Hibernate: select e1_0.emp_id,e1_0.age,e1_0.name,e1_0.salary from Employee e1_0
+Employee [emp_id=2, name=kalpesh, salary=45000, age=22]
+Employee [emp_id=3, name=abc, salary=50000, age=22]
+Employee [emp_id=4, name=jagdish, salary=100000, age=22]
+Employee [emp_id=5, name=raj, salary=100000, age=22]
+Employee [emp_id=8, name=bhushan, salary=100000, age=22]
+Employee [emp_id=9, name=bhushan, salary=100000, age=22]
+Employee [emp_id=10, name=bhushan, salary=100000, age=22]
+Employee [emp_id=11, name=purvesh, salary=120000, age=23]
+Employee [emp_id=12, name=sujay, salary=90000, age=23]
+Employee [emp_id=13, name=samarth, salary=65000, age=26]
+Employee [emp_id=14, name=suraj, salary=30000, age=22]
+
+Enter the choice:
+4
+Enter the id to delete 
+8
+Hibernate: select e1_0.emp_id,e1_0.age,e1_0.name,e1_0.salary from Employee e1_0 where e1_0.emp_id=?
+Hibernate: delete from Employee where emp_id=?
+deleted successfully
+
+Enter the choice:
+2
+Hibernate: select e1_0.emp_id,e1_0.age,e1_0.name,e1_0.salary from Employee e1_0
+Employee [emp_id=2, name=kalpesh, salary=45000, age=22]
+Employee [emp_id=3, name=abc, salary=50000, age=22]
+Employee [emp_id=4, name=jagdish, salary=100000, age=22]
+Employee [emp_id=5, name=raj, salary=100000, age=22]
+Employee [emp_id=9, name=bhushan, salary=100000, age=22]
+Employee [emp_id=10, name=bhushan, salary=100000, age=22]
+Employee [emp_id=11, name=purvesh, salary=120000, age=23]
+Employee [emp_id=12, name=sujay, salary=90000, age=23]
+Employee [emp_id=13, name=samarth, salary=65000, age=26]
+Employee [emp_id=14, name=suraj, salary=30000, age=22]
+
+Enter the choice:
+4
+Enter the id to delete 
+9
+Hibernate: select e1_0.emp_id,e1_0.age,e1_0.name,e1_0.salary from Employee e1_0 where e1_0.emp_id=?
+Hibernate: delete from Employee where emp_id=?
+deleted successfully
+
+Enter the choice:
+2
+Hibernate: select e1_0.emp_id,e1_0.age,e1_0.name,e1_0.salary from Employee e1_0
+Employee [emp_id=2, name=kalpesh, salary=45000, age=22]
+Employee [emp_id=3, name=abc, salary=50000, age=22]
+Employee [emp_id=4, name=jagdish, salary=100000, age=22]
+Employee [emp_id=5, name=raj, salary=100000, age=22]
+Employee [emp_id=10, name=bhushan, salary=100000, age=22]
+Employee [emp_id=11, name=purvesh, salary=120000, age=23]
+Employee [emp_id=12, name=sujay, salary=90000, age=23]
+Employee [emp_id=13, name=samarth, salary=65000, age=26]
+Employee [emp_id=14, name=suraj, salary=30000, age=22]
+
+Enter the choice:
+5
+Exiting the program...
